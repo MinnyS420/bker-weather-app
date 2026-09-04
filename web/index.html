@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="mk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moto Weather Guard — preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 50% 0%, #1b2333 0%, #05070a 60%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          sans-serif;
+      }
+
+      .stage {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 32px 16px;
+      }
+
+      .phone {
+        position: relative;
+        width: 390px;
+        height: 844px;
+        max-height: calc(100vh - 120px);
+        border-radius: 46px;
+        border: 10px solid #12161d;
+        background: #0a0d12;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65),
+          0 0 0 1px rgba(255, 255, 255, 0.06);
+      }
+
+      .notch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 148px;
+        height: 26px;
+        background: #12161d;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        z-index: 10;
+      }
+
+      #phone-screen {
+        height: 100%;
+        width: 100%;
+        display: flex;
+      }
+
+      .hint {
+        margin: 0;
+        color: #5e6879;
+        font-size: 13px;
+        letter-spacing: 0.2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="phone">
+        <div class="notch"></div>
+        <div id="phone-screen"></div>
+      </div>
+      <p class="hint">
+        Web preview · react-native-web · live Open-Meteo data · notifications
+        stubbed to the console
+      </p>
+    </div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the backdrop baked into ic_launcher_foreground, so the seam is
+         invisible if a launcher parallaxes the two adaptive layers apart. -->
+    <color name="ic_launcher_background">#010A18</color>
+</resources>
