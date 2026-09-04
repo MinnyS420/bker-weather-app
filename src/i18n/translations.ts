@@ -88,6 +88,8 @@ const mk: Dict = {
     'Локацијата не е достапна. Се користи последната позната позиција.',
   'settings.hour': 'Час',
   'settings.minute': 'Минута',
+  'settings.privacyTitle': 'Приватност',
+  'settings.privacyLink': 'Политика за приватност',
 };
 
 const en: Dict = {
@@ -173,6 +175,8 @@ const en: Dict = {
     'Location is unavailable. Using the last known position.',
   'settings.hour': 'Hour',
   'settings.minute': 'Minute',
+  'settings.privacyTitle': 'Privacy',
+  'settings.privacyLink': 'Privacy policy',
 };
 
 const de: Dict = {
@@ -259,6 +263,8 @@ const de: Dict = {
     'Standort nicht verfügbar. Letzte bekannte Position wird verwendet.',
   'settings.hour': 'Stunde',
   'settings.minute': 'Minute',
+  'settings.privacyTitle': 'Datenschutz',
+  'settings.privacyLink': 'Datenschutzerklärung',
 };
 
 const it: Dict = {
@@ -344,6 +350,8 @@ const it: Dict = {
     'Posizione non disponibile. Si usa l’ultima posizione nota.',
   'settings.hour': 'Ora',
   'settings.minute': 'Minuto',
+  'settings.privacyTitle': 'Privacy',
+  'settings.privacyLink': 'Informativa sulla privacy',
 };
 
 const fr: Dict = {
@@ -429,6 +437,8 @@ const fr: Dict = {
     'Position indisponible. Dernière position connue utilisée.',
   'settings.hour': 'Heure',
   'settings.minute': 'Minute',
+  'settings.privacyTitle': 'Confidentialité',
+  'settings.privacyLink': 'Politique de confidentialité',
 };
 
 const ru: Dict = {
@@ -514,6 +524,8 @@ const ru: Dict = {
     'Местоположение недоступно. Используется последняя известная позиция.',
   'settings.hour': 'Час',
   'settings.minute': 'Минута',
+  'settings.privacyTitle': 'Конфиденциальность',
+  'settings.privacyLink': 'Политика конфиденциальности',
 };
 
 const sr: Dict = {
@@ -599,6 +611,8 @@ const sr: Dict = {
     'Lokacija nije dostupna. Koristi se poslednja poznata pozicija.',
   'settings.hour': 'Sat',
   'settings.minute': 'Minut',
+  'settings.privacyTitle': 'Privatnost',
+  'settings.privacyLink': 'Politika privatnosti',
 };
 
 export const MESSAGES: Record<LanguageCode, Dict> = {

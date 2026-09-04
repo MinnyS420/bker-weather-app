@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
+const PRIVACY_POLICY_URL =
+  'https://minnys420.github.io/bker-weather-app/privacy.html';
 
 import { COLORS } from '../components/theme';
 import { LANGUAGES } from '../i18n';
@@ -129,6 +132,17 @@ export default function SettingsScreen({
         {location?.isFallback ? (
           <Text style={styles.fallback}>{t('settings.usingFallback')}</Text>
         ) : null}
+      </View>
+
+      <Text style={styles.sectionLabel}>{t('settings.privacyTitle')}</Text>
+      <View style={styles.card}>
+        <TouchableOpacity
+          onPress={() => {
+            Linking.openURL(PRIVACY_POLICY_URL).catch(() => undefined);
+          }}
+          accessibilityRole="link">
+          <Text style={styles.privacyLink}>{t('settings.privacyLink')}</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -260,6 +274,12 @@ const styles = StyleSheet.create({
     color: COLORS.warningText,
     fontSize: 13,
     marginTop: 10,
+    textAlign: 'center',
+  },
+  privacyLink: {
+    color: COLORS.accent,
+    fontSize: 16,
+    fontWeight: '700',
     textAlign: 'center',
   },
 });
