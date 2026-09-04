@@ -10,6 +10,8 @@ Privacy policy URL (after GitHub Pages is live):
 
 `https://minnys420.github.io/bker-weather-app/privacy.html`
 
+Turn Pages on once: GitHub repo → Settings → Pages → Build and deployment → Source **GitHub Actions**. Then open Actions and run (or re-run) the `github-pages` workflow. Wait until the URL above loads before pasting it into Play Console.
+
 Back up these two files somewhere safe (USB / password manager). Losing them means you cannot update the app later:
 
 - `android/upload-keystore.jks`
